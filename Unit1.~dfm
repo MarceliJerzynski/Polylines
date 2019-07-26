@@ -1,0 +1,66 @@
+object Form1: TForm1
+  Left = 602
+  Top = 217
+  Width = 691
+  Height = 511
+  Caption = 'Zadanie testowe - Marceli Jerzy'#324'ski'
+  Color = clBtnHighlight
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  OnCreate = FormCreate
+  OnKeyDown = FormKeyDown
+  OnMouseDown = FormMouseDown
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Timer1: TTimer
+    Interval = 20
+    OnTimer = Timer1Timer
+    Left = 376
+    Top = 88
+  end
+  object PopupMenu1: TPopupMenu
+    OnPopup = PopupMenu1Popup
+    Left = 336
+    Top = 88
+    object Line: TMenuItem
+      Caption = 'Line'
+      Checked = True
+      RadioItem = True
+      OnClick = LineClick
+    end
+    object Arc: TMenuItem
+      Caption = 'Arc'
+      RadioItem = True
+      OnClick = ArcClick
+    end
+    object N1: TMenuItem
+      Caption = '-'
+    end
+    object Finish1: TMenuItem
+      Caption = 'Finish                                 Enter'
+      OnClick = Finish1Click
+    end
+    object Continue1: TMenuItem
+      Caption = 'Continue                               Esc'
+      Enabled = False
+      OnClick = Continue1Click
+    end
+    object N3: TMenuItem
+      Caption = '-'
+    end
+    object Undo1: TMenuItem
+      Caption = 'Undo                              Ctrl + Z'
+      Enabled = False
+      OnClick = Undo1Click
+    end
+    object Redo1: TMenuItem
+      Caption = 'Redo                  Ctrl + Shift + Z'
+      Enabled = False
+      OnClick = Redo1Click
+    end
+  end
+end
